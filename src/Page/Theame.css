@@ -1,0 +1,96 @@
+[data-theme="dark"] {
+  --background: #292b32;
+  --text-primary: #fff;
+}
+
+[box-theame="dark"] {
+  --box-backgraound: #3b3e47;
+}
+
+[box-events="dark"] {
+  --event-background: #292b32;
+}
+[lower-theame="dark"] {
+  --lower-background-1: #18282a;
+  --lower-background-2: #221a2c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.app {
+  background-color: var(--background);
+  color: var(--text-primary);
+  transition: all 0.5s;
+  height: max-content;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+input[type="checkbox"]:checked {
+  margin: 0;
+  padding: 0;
+}
+
+.toggle {
+  position: fixed;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  border-radius: 30px;
+  border: 2px solid gray;
+}
+
+.toggle::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  border-radius: 50%;
+  background-image: url("../image/Sun.svg");
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  transition: all 0.5s;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.checkbox:checked + .toggle::after {
+  left: 24px;
+  background-image: url("../image/Moon.svg");
+}
+
+.checkbox:checked + .toggle {
+  background-color: black;
+}
+
+.checkbox {
+  display: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  margin-top: 50px;
+  background-color: var(--background-card);
+}
+
+
+.upper-cards .more-button {
+  padding: 20px 0px;
+}

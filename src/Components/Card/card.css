@@ -1,0 +1,142 @@
+.container hr {
+    width: 77px;
+    height: 4px;
+    background-color: #738fff;
+  }
+  .container .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200px;
+    height: 400px;
+    padding: 0px 8px;
+    margin: 20px;
+    background-color: var(--box-backgraound);
+    box-shadow: 2px 2px 8px rgb(50, 49, 49);
+  }
+  .container .Upper-Cards {
+    display: grid;
+    grid-template-columns: repeat(5, [col-start] fit-content(450px) [col-end]);
+  }
+  
+  .Upper-Cards .name {
+    font-weight: 600;
+    font-size: 15px;
+    width: 180px;
+    text-align: center;
+  }
+  
+  .container .box img {
+    height: 70%;
+    width: 100%;
+  }
+  
+  .box-event {
+    width: 100%;
+    background-color: var(--event-background);
+  }
+  
+  table tr,
+  table td {
+    width: 200px;
+    text-align: center;
+  }
+  .thead td {
+    font-size: 14px;
+    color: #525965;
+    font-weight: 600;
+  }
+  .box-detail {
+    width: 90%;
+    margin: auto;
+    margin-top: -40px;
+  }
+  .box-detail p {
+    font-size: 12px;
+  }
+  .other-photo {
+    height: 60%;
+    padding: 8px 2px;
+  }
+  .more-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .more-button button {
+    background-color: #2c9cf0;
+    padding: 10px;
+    border: none;
+    color: white;
+  }
+
+  /* @media (max-width: 1024px){
+    .container .Upper-Cards {
+        grid-template-columns: repeat(3, [col-start] fit-content(450px) [col-end]);
+        margin-left: 60px;
+      }
+  }
+
+  @media (max-width: 1024px){
+    .container .Upper-Cards {
+        grid-template-columns: repeat(3, [col-start] fit-content(450px) [col-end]);
+        margin-left: 60px;
+      }
+  } */
+
+  @media (max-width: 1024px){
+    .container .box{
+        width: 170px;
+        height: 350px;
+    }
+    .Upper-Cards .name {
+        font-weight: 500;
+        font-size: 14px;
+        width: 160px;
+    }
+    table tr,
+  table td {
+    width: 170px;
+  }
+  .thead td {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .box-detail {
+    width: 80%;
+  }
+  .box-detail p {
+    font-size: 11px;
+  }
+  }
+  @media (max-width: 928px){
+    .container .Upper-Cards {
+        grid-template-columns: repeat(4, [col-start] fit-content(450px) [col-end]);
+        margin-left: 60px;
+      }
+      .container .box{
+        width: 150px;
+        height: 320px;
+    }
+    .Upper-Cards .name {
+        font-weight: 300;
+        font-size: 12px;
+        width: 140px;
+    }
+    table tr,
+  table td {
+    width: 150px;
+  }
+  .thead td {
+    font-size: 11px;
+    font-weight: 300;
+  }
+  .box-detail {
+    width: 70%;
+  }
+  .box-detail p {
+    font-size: 11px;
+  }
+  }
+  
+  
